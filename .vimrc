@@ -32,9 +32,8 @@ imap <right> <nop>
 "set foldlevelstart=1
 
 "let javaScript_fold=1         " JavaScript
-
-set encoding=utf-8
 scriptencoding utf-8
+set encoding=utf-8
 syntax on
 filetype plugin indent on
 
@@ -46,7 +45,7 @@ set cursorline
 set hlsearch
 set backspace=2
 set list
-set listchars=trail:-,eol:¬,space:\ ,tab:.\  
+set listchars=trail:-,eol:¬,tab:--
 
 
 set expandtab
