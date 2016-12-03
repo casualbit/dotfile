@@ -22,7 +22,6 @@ set background=dark
 
 
 " general settings
-
 set tabstop=2       " tab width
 set shiftwidth=2    " shift width
 set softtabstop=2
@@ -37,10 +36,8 @@ set history=1000    " big command history
 set undolevels=1000 " big undo history
 set list            " show whitespace characters
 set listchars=trail:-,eol:¬,tab:.\  
-
 "set foldmethod=syntax
 "set foldlevelstart=1
-
 set autoread
 set nowrap
 
@@ -53,22 +50,26 @@ let airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 "set g:airline_theme=
 
+
 " Open NERDTree on vim open
 " autocmd vimenter * NERDTree 
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+
 " disable auto-comments
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 
 " trim trailing whitespace from javascript files
 autocmd BufWritePre *.js :%s/\s\+$//e
 autocmd BufWritePre *.json :%s/\s\+$//e
 
+
 " use javascript syntax highlighting for json files
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
-" mappings
 
+" mappings
 nmap <CR> O<Esc>j
 nmap <silent> <C-D> :NERDTreeToggle<CR>		" NERDtree
 map <C-S-j> ddkkp				" Ctrl-Shift Down (k) to move a line below the line below it
