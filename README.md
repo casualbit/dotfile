@@ -4,12 +4,10 @@ This repository holds a bunch of config files for setting up linux terminal edit
 
 ### Setup Instructions ###
 
-* Summery
+* Steps
 
 1. git clone
-
 2. cd dotfile
-
 3. ./install.sh
 
 * Dependencies
