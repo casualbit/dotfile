@@ -16,4 +16,4 @@ Currently the installer copies vim config (so you need vim), a tmux config (so y
 
 ### Who do I talk to? ###
 
-* If you have issues using this, please contact scottjameslowe@gmail.com.
+* If you have issues using this, please contact casualbit@protonmail.com.
